@@ -1,1 +1,1 @@
-// NGO Membership System JavaScript
+console.log("LNHKS NGO Management System Started");
