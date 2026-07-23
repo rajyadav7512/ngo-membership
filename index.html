@@ -1,44 +1,12 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="hi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NGO Membership Receipt</title>
 
-<style>
-body{
-    font-family:Arial,sans-serif;
-    background:#f4f4f4;
-    margin:0;
-    padding:20px;
-}
-.container{
-    max-width:700px;
-    margin:auto;
-    background:#fff;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 0 10px #ccc;
-}
-h1{
-    color:#b30000;
-    text-align:center;
-}
-input,select{
-    width:100%;
-    padding:10px;
-    margin:8px 0;
-}
-button{
-    width:100%;
-    padding:12px;
-    background:#0b8f2a;
-    color:white;
-    border:none;
-    font-size:18px;
-    border-radius:5px;
-}
-</style>
+<title>NGO Membership System</title>
+
+<link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -46,25 +14,68 @@ button{
 
 <div class="container">
 
+<div class="header">
+
+<img src="1000001857-modified.png" class="logo">
+
+<div>
+
 <h1>लक्ष्मी नारायण हरिकृपा सेवा संस्थान</h1>
 
-<h3>Membership Form</h3>
-
-<input type="text" placeholder="सदस्य का नाम">
-
-<input type="text" placeholder="मोबाइल नंबर">
-
-<input type="text" placeholder="पता">
-
-<select>
-<option>₹1101</option>
-<option>₹2100</option>
-<option>₹5100</option>
-</select>
-
-<button>Generate Receipt</button>
+<p>Membership Management System</p>
 
 </div>
 
+</div>
+
+<hr>
+
+<h2>नया सदस्य जोड़ें</h2>
+
+<form id="memberForm">
+
+<label>सदस्य का नाम</label>
+
+<input
+type="text"
+id="name"
+required>
+
+<label>मोबाइल नंबर</label>
+
+<input
+type="tel"
+id="mobile"
+required>
+
+<label>पता</label>
+
+<textarea id="address"></textarea>
+
+<label>सदस्यता राशि</label>
+
+<select id="amount">
+
+<option>1101</option>
+
+<option>2100</option>
+
+<option>5100</option>
+
+</select>
+
+<button type="submit">
+
+रसीद बनाएँ
+
+</button>
+
+</form>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
